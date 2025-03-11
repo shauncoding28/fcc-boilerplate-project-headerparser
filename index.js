@@ -30,7 +30,7 @@ app.get('/api/whoami', (req, res) => {
   const preferredLanguage = req.headers['accept-language'];
   const clientSoftware = req.headers['user-agent'];
 
-  res.status(200).json({ ip: clientIp, language: preferredLanguage, software: clientSoftware });
+  res.status(200).json({ ipaddress: clientIp, language: preferredLanguage, software: clientSoftware });
 });
 
 // listen for requests :)
